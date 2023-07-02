@@ -1,11 +1,13 @@
 body {
 
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
+
 
 header {
     display: flex;
-    background-color: red;
+    background-color: rgb(46, 44, 44);
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 10px 40px;
@@ -26,9 +28,313 @@ nav a {
 }
 
 nav a:hover {
-    color: greenyellow;
+    color: red;
 }
+
 .cesaroldan {
- 
- color: white ;
+
+    color: white;
+}
+
+.foto {
+    height: 210px;
+    border-radius: 500px;
+
+}
+
+.caixa {
+
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    background-color: white;
+    margin-left: 20px;
+
+
+}
+
+.centro {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    height: 50%;
+    margin-top: 7%;
+    width: 55%;
+    overflow: hidden;
+    background-color: rgb(46, 44, 44);
+}
+
+.izquerdo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: rgb(46, 44, 44);
+    ;
+}
+
+.dereito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-size: 17px;
+    color: white;
+
+}
+
+.sobre__mim {
+    height: 600px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    background-color: rgb(46, 44, 44);
+
+
+}
+
+
+.treis {
+    background-color: #000000;
+    color: white;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+#certi {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30px;
+
+}
+
+.trabalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 30px;
+    margin-right: 20px;
+
+
+
+
+}
+
+.image_size {
+
+    height: 200px;
+    width: 400px;
+
+}
+
+footer {
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F2F2F2;
+    height: 700px;
+}
+
+.red-social {
+    height: 60px;
+    background-color: #1B1B1B;
+    border-radius: 10px;
+}
+
+.contato {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contato__final {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.conteiner-formas a {
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.conteiner-formas a i {
+    color: rgb(223, 68, 68);
+    margin-right: 20px;
+}
+
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+}
+
+.container form {
+
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20 px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.input-group {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-group label {
+    flex-basis: 29%;
+}
+
+.input-group input,
+.input-group textarea {
+
+    flex-basis: 68%;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+
+::placeholder {
+
+    font-size: 14px;
+}
+
+form button {
+
+    background-color: rgb(71, 85, 207);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+
+}
+
+
+
+@media (max-width: 1000px) {
+    header a {
+        padding: 0px 5px;
+
+    }
+
+    header {
+        flex-direction: column;
+
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .centro {
+        width: 87%;
+        height: 70%;
+        flex-direction: column;
+    }
+
+    .izquerdo {
+        width: 100%;
+        height: 50%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .dereito {
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+        padding-top: 0.5px;
+    }
+
+    .sobre__mim {
+        height: auto;
+        padding: 0 30px 30px 30px;
+        line-height: 1.5;
+
+    }
+
+    .treis {
+        height: fit-content;
+
+    }
+
+    .trabalho {
+
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px 30px 18px;
+    }
+
+    .image_size {
+
+        height: 160px;
+        width: 320px;
+
+    }
+
+
+    footer {
+
+        height: 1000px;
+    }
+
+
+    .red-social {
+        margin: 0 10px 0 10px;
+    }
+
+    .contato__final {
+        width: 80%;
+        height: 70%;
+        flex-direction: column;
+
+    }
+
+    .formulario,
+    .label {
+
+        width: 120px;
+
+
+    }
+
+
 }

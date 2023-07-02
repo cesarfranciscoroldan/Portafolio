@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/2a9039e487.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <h1 class="cesaroldan">Cesar Roldan</h1>
         <nav>
             <p>
-                <a href="#um" class="nav-link">Sobre</a>
-                <a href="#dois" class="nav-link">Certificados</a>
-                <a href="#treis" class="nav-link">Contato</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#certificado" class="nav-link">Certificados</a>
+                <a href="#conta" class="nav-link">Contato</a>
 
             </p>
         </nav>
 
     </header>
 
-    <section>
-
-    
-          
-            
-          <img class="cesar" src="foto-cesar.jpeg" alt="cesar-foto" height="400">
-
-    
-
+    <section class="caixa">
+        <div class="centro">
+            <div class="izquerdo">
+                <img class="foto" src="foto-cesar.jpeg" alt="cesar-foto" height="400">
+            </div>
+            <div class="dereito">
+                <div>
+                    <h1>Cesar Roldan</h1>
+                    <h3>Estudante Front-End<h3>
+                </div>
+            </div>
+        </div>
     </section>
 
-        <section id="um">
-        <h2 align="center"><font color="green">Sobre mim</h2>
+
+    <section class="sobre__mim" id="sobre">
+        <h2>Sobre mim</h2>
         <p>
             Oi... Eu sou Cesar Roldan, Sou da Venezuela! Estou estudando para começar a trabalhar na área de TI. Sou
             responsável e organizado. Eu gosto de aprender novas coisas
@@ -42,6 +49,7 @@
             destaco minha criatividade, perseverança e o profissionalismo ao enfrentar novos projetos.
 
         </p>
+
         <h2>Cursos</h2>
         <ul>
             <li>Fundamentos de lógica de programação</li>
@@ -49,70 +57,108 @@
             <li>Avançado de HTML</li>
             <li>Inovando com CSS</li>
             <li>Crie um site simples usando HTML, CSS e Javascript</li>
-        </ul>    <section id="dois">
-            <h1 align="center"><font color="red">Certificados</font></h1>
-    
-            <div>
+        </ul>
+    </section>
+    <section class="treis" id="certificado">
+        <h1 id="certi">Certificados</h1>
+        <div class="trabalho">
+
+            <div class="card">
                 <h3>Fundamentos de logica de programação</h3>
-                <img src="Fundamentos de logica de programaçao.jpg" alt="fundamentos" height="373">
+                <img src="Fundamentos de logica de programaçao.jpg" alt="fundamentos" class="image_size">
             </div>
-    
-    
-            <div>
+
+
+            <div class="card">
                 <h3>HTML basico</h3>
-                <img src="HTML basico.jpg" alt="HTML basico" height="350">
-    
+                <img src="HTML basico.jpg" alt="HTML basico" class="image_size">
+
             </div>
-    
-            <div>
+
+            <div class="card">
                 <h3>HTML avançado</h3>
-                <img src="HTML avançado.jpg" alt="HTML avançado" height="350">
+                <img src="HTML avançado.jpg" alt="HTML avançado" class="image_size">
             </div>
-            <div>
+            <div class="card">
                 <h3>Inovando com CSS</h3>
-                <img src="Inovando com CSS.jpg" alt="Inovando com CSS" height="350">
+                <img src="Inovando com CSS.jpg" alt="Inovando com CSS" class="image_size">
             </div>
-    
-            <div>
-    
+
+            <div class="card">
+
                 <h3>Site com HTML, CSS e JavaScript</h3>
-                <img src="Site com HTML, CSS e JavaScript.jpg" alt="Site" height="387">
-    
+                <img src="Site com HTML, CSS e JavaScript.jpg" alt="Site" class="image_size">
+
             </div>
-    
-        </section>
+        </div>
     </section>
 
+
     <footer>
-        <section id="treis">
-            <h2 align="center"><font color="blue">Contato</font></h2>
+        <section id="conta">
+            <h2>Contato</h2>
         </section>
 
-        <div align="center">
-            <a href="https://github.com/cesarfranciscoroldan" target="_blank">
-            <img src="Logo de git hub.jpg" alt="Logo Git hub" height="200">
-            </a>
+        <div class="contato">
 
             <a href="https://www.facebook.com/cesar.roldan.792" target="_blank">
-            <img src="Facebook_f_logo_(2019).svg.webp" alt="Logo Facebook" height="160">
+                <img src="Facebook_f_logo_(2019).svg.webp" alt="Logo Facebook" class="red-social">
+            </a>
+            <hr>
+            <a href="https://github.com/cesarfranciscoroldan" target="_blank">
+                <img src="git_hub.png" alt="Logo Git hub" class="red-social">
+            </a>
+            <hr>
+            <a href="https://es.linkedin.com/" target="_blank">
+                <img src="linkedin.png" alt="Logo linkedin" class="red-social">
             </a>
         </div>
 
-        <section>
 
-            <div align="center">
+        <section class="contato__final">
+            <div class="conteiner-formas">
+                <div class="info-form"><a href="https://web.whatsapp.com/"><i class="fa fa-phone"></i>+55 (92)
+                        98822-1596</a>
+                    <a
+                        href="https://accounts.google.com/v3/signin/identifier?dsh=S-1191070698%3A1667716293308858&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAt3ooW15XNaIAM8LHORSR-lMssZxmXdAK2J7CJU6IK7_EkKOAoN3lDOqHluwL-onZiSTcYChA"><i
+                            class="fa-solid fa-envelope"></i>0c.roldan0@gmail.com</a>
+                    <a href="https://www.google.com/maps/@-3.0651745,-59.9906682,12.26z?hl=es"><i
+                            class="fa-solid fa-location-dot"></i>Manaus, Brasil</a>
+                </div>
+                <div class="container">
+                    <form class="formulario">
+                        <div class="input-group">
+                            <label class="label">Nome e sobrenome:</label>
+                            <input type="text" placeholder="Digite seu Nome" id="contact-name" onkeyup="validateName()">
+                            <span id="name-error"></span>
 
-                <a href="https://web.whatsapp.com/" target="_blank">+55 (92) 98822-1596</a>
-                <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">0c.roldan0@gmail.com</a>
-                <a href="https://www.google.com/maps/@-3.0651745,-59.9906682,12.26z?hl=es" target="_blank">Manaus, Brasil</a>
+                        </div>
 
+                        <div class="input-group">
+                            <label class="label">E-mail:</label>
+                            <input type="email" placeholder="Digite seu E-mail" id="contact-email"
+                                onkeyup="validateEmail()">
+                            <span id="email-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="label">Mesagem:</label>
+                            <textarea rows="5" placeholder="Digite sua Mensagem" id="contact-message"
+                                onkeyup="validateMessage()"></textarea>
+                            <span id="message-error"></span>
+                        </div>
+
+                        <button onclick="return validateForm()">Enviar</button>
+                        <span id="submit-error"></span>
+                    </form>
+
+
+                </div>
             </div>
-
-
-
-
         </section>
+
     </footer>
-    
+
 </body>
+
 </html>
